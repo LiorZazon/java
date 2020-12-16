@@ -1,0 +1,101 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        // write your code here
+        //Targil:
+        //1. input two int numbers from the user, check if they are both zeros, if so print "both zeroes" otherwise print "not both zeroes"
+        //2. input a,b,c (int)
+        //    check if all numbers are different from each-other, if so print "diff" otherwise print "similar"
+        //3. input x,y,z (float)
+        //    check and print how many of them are positive
+        //    for example:
+        //    for input of -1, 4 ,2.98 your program should print 2 positive numbers
+        //    for input of -4.5, 0, -12 your program should print 0 positive numbers
+        //4. input a, b, c.
+        //   print the biggest
+        //   hint: if a is bigger than b and bigger than c --> a biggest
+        //       else if b is bigger than c --> b biggest
+        //       else --> c biggest
+        Scanner s = new Scanner(System.in);
+        System.out.println("please enter num1: ");
+        int num1 = s.nextInt();
+        System.out.println("please enter num2");
+        int num2 = s.nextInt();
+        if (num1 == 0 && num2 == 0) {
+            System.out.println("both zeroes");
+        }
+         else {
+             System.out.println("not both zeros");
+        }
+
+        System.out.println("please enter a number: ");
+        int a = s.nextInt();
+        System.out.println("please enter a number: ");
+        int b = s.nextInt();
+        System.out.println("please enter a number: ");
+        int c = s.nextInt();
+
+        if (a != b || b != c) {
+            System.out.println("different");
+        }
+        else {
+            System.out.println("similar");
+//3
+            System.out.println("please enter a number: ");
+            float x = s.nextFloat();
+            System.out.println("Please enter a number(f): ");
+            float y = s.nextFloat();
+            System.out.println("Please enter a number(f): ");
+            float z = s.nextFloat();
+
+            int count = 0;
+            if (x > 0) {
+                count++;
+            }
+            if (y > 0) {
+                count++;
+            }
+            if (z > 0) {
+                count++;
+            }
+            System.out.println(count);
+            System.out.println(" positive number");
+
+            if (x > 0 && y > 0 && z > 0) {
+                System.out.println("3 positives");
+            } else if (x > 0 && y > 0 || x > 0 && z > 0 || y > 0 && z > 0) {
+                System.out.println("2 positives");
+            } else if (x > 0 || y > 0 || z > 0) {
+                System.out.println("1 positive");
+            } else {
+                System.out.println("0 posotive");
+            }
+
+//4
+            System.out.println("please enter a number(f)");
+            float a2 = s.nextInt();
+            System.out.println("please enter a number(f)");
+            float b2 = s.nextInt();
+            System.out.println("please enter a number(f)");
+            float c2 = s.nextInt();
+
+            if (a2 == b2 && a2 == c2 && b2 == c2) {
+                System.out.println("all the same");
+            } else if (a2 > b2 && a2 > c2) {
+                System.out.println(a2);
+            } else if (b2 > c2) {
+                System.out.println(b2);
+            }
+            else {
+                System.out.println(c2);
+            }
+            System.out.println("goodbye");
+        
+        }
+        
+    }
+}
