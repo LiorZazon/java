@@ -1,0 +1,187 @@
+package com.company;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        // write your code here
+
+        Scanner s = new Scanner(System.in);
+        Random r = new Random();
+
+        //targil 11:
+
+        System.out.println("please enter the age of Tomer: ");
+        int tomerAge = s.nextInt();
+        System.out.println("please enter the age of Danny: ");
+        int dannyAge = s.nextInt();
+
+        if (tomerAge > dannyAge) {
+            System.out.println("tomer is older");
+        } else if (dannyAge > tomerAge)
+            System.out.println("danny is older");
+
+        else {
+            System.out.println("same");
+        }
+        //targil 12:
+
+        System.out.println("please enter num1: ");
+        int num1 = s.nextInt();
+        System.out.println("please enter num2: ");
+        int num2 = s.nextInt();
+
+        if (num1 == num2) {
+            System.out.println("equal");
+        } else if (num1 < num2) {
+            System.out.println(num1);
+        } else {
+            System.out.println(num2);
+        }
+
+        //targil 13:
+
+        System.out.println("please enter a number for 'a': ");
+        int a = s.nextInt();
+        System.out.println("please enter a number for 'b': ");
+        int b = s.nextInt();
+        System.out.println("please enter a number for 'c': ");
+        int c = s.nextInt();
+
+        if (a > b && a < c || a < b && a > c)
+            System.out.println(a);
+        else if (b > a && b < c || b < a && b > c)
+            System.out.println(b);
+        else {
+            System.out.println(c);
+        }
+
+
+        //targil 14:
+
+        System.out.println("please enter a number: ");
+        int number1 = s.nextInt();
+        System.out.println("please enter a number: ");
+        int number2 = s.nextInt();
+
+        if (number1 > number2) {
+            System.out.println(String.format("%d > %d", number1, number2));
+        } else if (number2 > number1) {
+            System.out.println(String.format("%d > %d", number2, number1));
+        }
+
+
+        //targil 15:
+
+        int x = 0;
+        while (x <= 10) {
+            System.out.println(x);
+            x++;
+        }
+
+        //targil 16:
+
+        int index = 1;
+        while (index <= 50) {
+            System.out.println(index);
+            index += 2;
+        }
+
+        // targil 17:
+
+        int index_1 = 10;
+        do {
+            int random_num = r.nextInt(20) + 10;
+            System.out.println(random_num);
+            ;
+        }
+        while (index_1 != 15);
+
+        //for (int index_2 = 10; index_2 <=30; index++){
+        //    int random_number = r.nextInt(30) + 10;
+
+
+        // TARGIL 18:
+
+        System.out.println("please enter a number: ");
+        int number = s.nextInt();
+        switch (number) {
+            case 1:
+                System.out.println("one");
+                break;
+            case 2:
+                System.out.println("two");
+                break;
+            case 3:
+                System.out.println("three");
+                break;
+            default:
+                System.out.println("unknown number");
+        }
+        // targil 19:
+
+        //   int guess;
+        //   int sum = 1;
+        //   do {
+        //       System.out.println("please guess a number: ");
+        //       guess = s.nextInt();
+        //        if (guess == 0) {
+        //           break;
+        //           sum =
+
+        //          System.out.println(sum);
+
+        // while (true);
+        // i couldn't figure out how to print the sum of the numbers the user entered.
+
+        //targil 20:
+
+        int num3digit = s.nextInt();
+
+        //targil 21:
+     /*   int on_average = 1;
+        int grades;
+        do {
+            System.out.println("enter a grade: ");
+            grades = s.nextInt();
+            if (grades == 0) {
+                break;
+            }
+            while (on_average)
+        }
+*/
+
+                // targil 22:
+
+                // targil 23:
+                System.out.println("please enter a negative number: ");
+            int number_ = s.nextInt();
+
+            while (number_ >= 0) {
+                number_ = s.nextInt();
+            }
+            // targil 24:
+
+            String line_ = s.nextLine();
+
+
+            // targil 25:
+
+            System.out.println("please enter temperature: ");
+            float temperature = s.nextFloat();
+
+            while (temperature <= 37) {
+                System.out.println("welcome");
+                temperature = s.nextFloat();
+                System.out.println("sorry you cannot enter");
+                if (temperature == -1) {
+                    break;
+                }
+            }
+            // targil 26:
+
+
+        }
+    }
