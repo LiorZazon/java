@@ -1,0 +1,131 @@
+package com.company;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+        Scanner s = new Scanner(System.in);
+        Random r = new Random();
+
+        // targil 1:
+
+        // מבנה נתונים המאחד בתוכו קבוצה של תאי זיכרון תחת אותה קורת גג ומאפשר לנו לנוע בינהם
+        // בחופשיות ולגשת לאיזה איבר שנרצה בתוך המערך.
+
+        // targil 2:
+
+        int [] numbers = {101, 102, 103, 104, 105};
+        //                 0    1    2    3    4
+        // 101 - נמצא במקום ה - 0
+        // 105 - נמצא במקום ה - 4
+
+        //targil 3:
+
+        int[] num = {2, 4, 6};
+        System.out.println(num[1]);
+        System.out.println(num[2]);
+
+        // targil 4:
+
+        //ניצור תא זיכרון בשם size ונשווה אותו לאורך/גודל המערך
+        // לאחר מכן נדפיס את אורך המערך פחות 1 על מנת להגיע למיקום האיבר האחרון במערך.
+        //דוגמה:
+        //int size = arr.length;
+        //System.out.println(arr[size -1]);
+
+        // דוגמה נוספת:
+        //אפשר מיד לרשום את אורך המערך פחות 1 וזה יקצר גם את הקוד.
+        //System.out.println(arr[arr.length]);
+
+        // targil 5:
+
+        int[] empty = new int[20];
+
+        // targil 6:
+
+        String[] words = {"welcome", "to", "java"};
+
+        // targil 7:
+
+        int[] arr_num = {-1, -2, -3, -4, -5};
+        for (int index = 0; index < arr_num.length; index++)
+        {
+            System.out.print(arr_num[index]);
+        }
+        System.out.println();
+
+        System.out.print("==============");
+
+        // targil 8:
+        System.out.println();
+
+        int[] arr_numm = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        for (int index1 = 1; index1 < arr_numm.length; index1 = index1 + 2)
+        {
+            System.out.println(arr_numm[index1]);
+        }
+
+        // targil 9:
+
+        for (int index1 = arr_numm.length -1; index1 >= 1; index1 = index1 -2)
+        {
+            System.out.println(arr_numm[index1]);
+        }
+
+        // targil 10:
+
+        int[] arr_user = new int[3];
+        System.out.println("please enter 3 numbers: ");
+
+        for (int index = 0; index < arr_user.length; index++)
+        {
+            arr_user[index] = s.nextInt();
+        }
+        for (int index = 0; index < arr_user.length; index++)
+        {
+            System.out.println(arr_user[index]);
+        }
+
+        // targil 11:
+        System.out.println();
+        System.out.println("============");
+        System.out.println();
+
+        int[] arr_int = new int[5];
+
+        for (int index = 0; index <= arr_int.length; index++)
+        {
+            arr_int[index] = r.nextInt(50) + 1;
+        }
+
+
+        // targil 12:
+        System.out.println(8 % 2);
+
+        int count = 0;
+        for (int index = 1; index <= 5; index++)
+        {
+            int number = r.nextInt(50) + 1;
+            System.out.println(number);
+            if (number % 2 == 0) {
+                System.out.println("zugi");
+                count++;
+            }
+            else
+            {
+                System.out.println("e-zugi");
+            }
+        }
+
+        if (count == 5) {
+            System.out.println("all are even");
+        }
+        else {
+            System.out.println("not all are even");
+
+
+    }
+}
