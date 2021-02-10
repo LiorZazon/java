@@ -1,0 +1,24 @@
+package com.company;
+
+import lombok.AllArgsConstructor;
+import lombok.ToString;
+
+@ToString
+@AllArgsConstructor
+public class Country {
+    
+    public String name;
+    public double size;
+    public int number_of_citizen;
+    public String continent;
+    
+    //functions:
+    
+    public void printCountrySize () {
+        System.out.println(String.format("size of the country is: %d" , size));
+    }
+    
+    public void printSizePerCitizen () {
+        System.out.println(String.format("size per citizen is: %d", size/number_of_citizen));
+    }
+}
