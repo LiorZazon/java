@@ -180,6 +180,25 @@ public class Main {
    // }
 
     //17
+    
+        // targil 17:
+
+    public static void addSulamit(){
+        System.out.println("#");
+    }
+    public static void add2Kohaviot(){
+        System.out.println("**");
+    }
+    public static void getString(String shtrudel) {
+        System.out.println("@@@");
+        add2Kohaviot();
+        addSulamit();
+    }
+
+    //targil 18:
+
+    // משתנה גלובלי הוא משתנה שמוגדר לפני ה-main וכך גם main וגם פונקציות אחרות יכולות לגשת אליו,
+    // משתנה שיוגדר בתוך main לא ניתן יהיה לגשת אליו מפונקציות אחרות באותה תוכנית אלא רק באזור הסקופ שלו.
 
 
 }
